@@ -1,23 +1,97 @@
 <!doctype html>
 <html>
-  <head>
-    <title>진기 & 후연 결혼합니다♥</title>
-    <style media="screen">
-      img {
-        width: 100%;
-        max-width: 500px;
-        margin-left: auto;
-        margin-right: auto;
-        display: block;
-      }
-    </style>
-  </head>
-  <body>
-    <img src="images/wedding00.png" alt="Characters of couple"><br>
-    <img src="images/wedding01.png" alt="Characters of couple"><br>
-    <img src="images/wedding02.png" alt="Characters of couple"><br>
-    <img src="images/wedding03.png" alt="Characters of couple"><br>
-    <img src="images/wedding04.png" alt="Characters of couple"><br>
-    <img src="images/wedding05.png" alt="Characters of couple"><br>
-  </body>
+
+<head>
+  <title>진기♥후연 결혼합니다!!!</title>
+  <style media="screen">
+    body {
+      margin: 0 0 0 0;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+    }
+    div {
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+    }
+
+    #invitation {
+      margin-top: 50px;
+      max-width: 400px;
+    }
+    #spring {
+      max-width: 500px;
+      margin-top: 50px;
+      margin-bottom: 50px;
+    }
+    #info {
+      max-width: 600px;
+      margin-top: 50px;
+      margin-bottom: 50px;
+    }
+    #guide1 {
+    margin-top: 100px;
+    }
+    #guide2 {
+    }
+    #ending {
+      max-width: 250px;
+      margin-top: 150px;
+      margin-bottom: 230px;
+    }
+    #daumRoughmapContainer1524505049274 {
+      width: 100%;
+      margin: 30px auto 30px auto;
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    <img src="images/wedding00.png" alt="Characters of couple">
+  </div>
+  <div>
+    <img src="images/wedding01.png" alt="Invitation sentences" id="invitation">
+  </div>
+  <div>
+    <img src="images/wedding02.png" alt="Earphone and flowers" id="spring">
+  </div>
+  <div>
+    <img src="images/wedding03.png" alt="Information" id="info">
+  </div>
+  <div>
+    <img src="images/wedding04.png" alt="Guide" id="guide1">
+  </div>
+  <!-- * Daum 지도 - 지도퍼가기 -->
+  <!-- 1. 지도 노드 -->
+  <div id="daumRoughmapContainer1524505049274" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+
+  <!--
+  	2. 설치 스크립트
+  	* 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.
+  -->
+  <script charset="UTF-8" class="daum_roughmap_loader_script" src="http://dmaps.daum.net/map_js_init/roughmapLoader.js"></script>
+
+  <!-- 3. 실행 스크립트 -->
+  <script charset="UTF-8">
+  	new daum.roughmap.Lander({
+  		"timestamp" : "1524505049274",
+  		"key" : "nttf"
+  	}).render();
+  </script>
+
+  <div>
+    <img src="images/wedding05.png" alt="Transportation" id="guide2">
+  </div>
+  <div>
+    <img src="images/wedding06.png" alt="Ending" id="ending">
+  </div>
+</body>
+
 </html>
