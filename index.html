@@ -35,24 +35,16 @@
     }
     #info {
       margin-top: 50px;
-      margin-bottom: 50px;
       width: 90%;
     }
-    #address {
-      margin-top: 50px;
-      width: 90%;
-    }
-    #transportation {
+    #map {
+      margin-top: 30px;
       width: 90%;
     }
     #ending {
       width: 50%;
       margin-top: 200px;
       margin-bottom: 250px;
-    }
-    #daumRoughmapContainer1524505049274 {
-      width: 90%;
-      margin: 30px auto 30px auto;
     }
 
     @media (min-device-width: 600px) {
@@ -67,9 +59,6 @@
       }
       #ending {
         max-width: 300px;
-      }
-      #daumRoughmapContainer1524505049274 {
-        width: 500px;
       }
     }
   </style>
@@ -89,31 +78,18 @@
     <img src="images/wedding03.png" alt="Information" id="info">
   </div>
   <div>
-    <img src="images/wedding04.png" alt="Guide" id="address">
-  </div>
-  <!-- * Daum 지도 - 지도퍼가기 -->
-  <!-- 1. 지도 노드 -->
-  <div id="daumRoughmapContainer1524505049274" class="root_daum_roughmap root_daum_roughmap_landing"></div>
-
-  <!--
-  	2. 설치 스크립트
-  	* 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.
-  -->
-  <script charset="UTF-8" class="daum_roughmap_loader_script" src="http://dmaps.daum.net/map_js_init/roughmapLoader.js"></script>
-
-  <!-- 3. 실행 스크립트 -->
-  <script charset="UTF-8">
-  	new daum.roughmap.Lander({
-  		"timestamp" : "1524505049274",
-  		"key" : "nttf"
-  	}).render();
-  </script>
-
-  <div>
-    <img src="images/wedding05.png" alt="Transportation" id="transportation">
+    <img src="images/wedding04.png" alt="Address" id="map">
   </div>
   <div>
-    <img src="images/wedding06.png" alt="Ending" id="ending">
+    <a href="http://map.daum.net/link/map/8117612" target="_blank">
+      <img src="images/wedding05.png" alt="Map" id="map">
+    </a>
+  </div>
+  <div>
+    <img src="images/wedding06.png" alt="Transportation" id="map">
+  </div>
+  <div>
+    <img src="images/wedding07.png" alt="Ending" id="ending">
   </div>
 </body>
 
